@@ -7,5 +7,5 @@
 
 - ***first change in fetaure branch***
 1. *second change*
-3. list
-    3.1 **third change to readme.md**
+2. list
+    2.1 **third change to readme.md**
