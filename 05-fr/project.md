@@ -57,9 +57,10 @@ Osoba chcąca zakupić produkt na aukcji.
 
 
 [Kupujący](#ac2)
-* [BR1](#br1) zgłoszenie oferty wyższej od wszystkich innych
-* [BR2](#br2) przekazanie należności sprzedającemu
-* [BR3](#br3) Obejrzenie produktu
+* [UC6](#br1) zgłoszenie oferty wyższej od wszystkich innych
+* [UC7](#br2) przekazanie należności sprzedającemu
+* [UC8](#br3) Obejrzenie produktu
+* [UC9](#br3) Potwierdzenie otrzymania produktu
 
 ---
 <a id="uc1"></a>
@@ -174,9 +175,9 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 ## Macierz CRUDL
 
 
-| Przypadek użycia                                  | Aukcja | Produkt | Oferta |
-| ------------------------------------------------- | ------ | ------- | --- |
-| UC1: Wystawienia produktu na aukcję               | C  |    C    | C |
-| UC2: Przekazanie produktu kupującemu                                          |  D  |  ---    | U |
-| BR1: zgłoszenie oferty wyższej od wszystkich innych               |    ---   |    ---    | C,U |
-| BR2: Przekazanie należności sprzedającemu               |    ---- |    U    | U |
+| Przypadek użycia                                  | Aukcja | Produkt | Oferta | Potwierdzenie wysyłki |
+| ------------------------------------------------- | ------ | ------- | --- | --|
+| UC1: Wystawienia produktu na aukcję               | C  |    C    | C | --- |
+| UC2: Przekazanie produktu kupującemu                                          |  D  |  ---    | U |   C |
+| UC6: zgłoszenie oferty wyższej od wszystkich innych               |    ---   |    ---    | C,U | --- |
+| UC7 Przekazanie należności sprzedającemu               |    ---- |    U    | U | ---
